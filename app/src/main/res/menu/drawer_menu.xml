@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_connect_desktop"
+        android:title="Connect Desktop" />
+
+    <item
+        android:id="@+id/nav_feedback"
+        android:title="Feedback" />
+
+    <item
+        android:id="@+id/nav_my_account"
+        android:title="Account" />
+
+    <item
+        android:id="@+id/nav_connect_tv"
+        android:title="Connect TV" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/nav_friend"
+        android:title="Tell a Friend" />
+
+    <item
+        android:id="@+id/nav_about_us"
+        android:title="About Us" />
+
+    <item
+        android:id="@+id/nav_help"
+        android:title="Help and Support" />
+
+    <item
+        android:id="@+id/nav_contact"
+        android:title="Contact Us" />
+
+</menu>

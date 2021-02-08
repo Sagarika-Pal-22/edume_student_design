@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:orientation="horizontal"
+        android:background="#e6e6e6">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/nav_image"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_girl" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fonts_medium"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:textColor="#3e3e3e"
+                android:lineSpacingExtra="3sp"
+                android:gravity="center_horizontal"
+                android:text="Teacher Name" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/fonts_medium"
+                android:textStyle="normal"
+                android:textSize="10sp"
+                android:textColor="#0a9524"
+                android:lineSpacingExtra="3sp"
+                android:gravity="center_horizontal"
+                android:text="Online" />
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:background="#7e7e7e"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_20sdp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fonts_medium"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#3e3e3e"
+            android:lineSpacingExtra="8sp"
+            android:gravity="center_horizontal"
+            android:text="Show Students Exercise Screen" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient_light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_23sdp"
+                android:src="@drawable/microphone"
+                app:tint="@color/colorPrimaryDark"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_23sdp"
+                android:src="@drawable/speaker"
+                app:tint="@color/colorPrimaryDark"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="End Share"
+                android:textAllCaps="false"
+                android:fontFamily="@font/fonts_medium"
+                android:background="@drawable/red_background"
+                android:textColor="#fff"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:text="More"
+                android:textColor="#000"
+                android:fontFamily="@font/fonts_medium"
+                android:layout_marginVertical="@dimen/_3sdp"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_23sdp"
+                android:src="@drawable/sms"
+                app:tint="@color/colorPrimaryDark"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_23sdp"
+                android:src="@drawable/call"
+                app:tint="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

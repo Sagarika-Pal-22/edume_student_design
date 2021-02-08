@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Student Perspective</string>
+    <string name="title_activity_report_">Report_Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="Open">open</string>
+    <string name="Close">close</string>
+    <string name="title_activity_chapter_test_report__52">ChapterTestReport_Activity_52</string>
+    <string name="title_activity_exercise_report__54">ExerciseReport_Activity_54</string>
+    <string name="title_activity_model_exam_report__55">ModelExamReport_Activity_55</string>
+    <string name="title_activity_chapter_test_report_57">ChapterTestReportActivity_57</string>
+    <string name="title_activity_model_exam_report_58">ModelExamReportActivity_58</string>
+    <string name="title_activity_my_teacher__60">MyTeacher_Activity_60</string>
+    <string name="title_activity_edume_61">EdumeActivity_61</string>
+    <string name="title_activity_chat_room__64_2">ChatRoom_Activity_64_2</string>
+    <string name="title_activity_screen_holding__64_13">ScreenHolding_Activity_64_13</string>
+    <string name="title_activity_screen_sharing__64_14">ScreenSharing_Activity_64_14</string>
+    <string name="title_activity_chat_64_15">ChatActivity_64_15</string>
+</resources>
