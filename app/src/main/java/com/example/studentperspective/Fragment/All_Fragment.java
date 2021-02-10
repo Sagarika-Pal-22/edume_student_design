@@ -10,25 +10,45 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.studentperspective.Badge_Adapter;
+import com.example.studentperspective.Badge_Model;
 import com.example.studentperspective.R;
+import com.example.studentperspective.Teacher_Adapter;
+import com.example.studentperspective.Teacher_Model;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class All_Fragment extends Fragment {
 
-    LinearLayout lin_1;
+    RecyclerView rv_teacher;
+    List<Teacher_Model> teacher_models;
+    Teacher_Adapter teacher_adapter;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.layout_93_2,container,false);
 
-        lin_1 = view.findViewById(R.id.lin_1);
+        teacher_models = new ArrayList<>();
 
-        lin_1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getActivity(),MyTeacher_Activity_60.class));
-            }
-        });
+        rv_teacher = view.findViewById(R.id.rv_teacher);
+        rv_teacher.setHasFixedSize(true);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL,false);
+        rv_teacher.setLayoutManager(linearLayoutManager);
+        teacher_models.add(new Teacher_Model("Daniel William","CBSE","Maths","Physics","English","134",
+                "1500","102 Videos"));
+        teacher_models.add(new Teacher_Model("Daniel William","CBSE","Maths","Physics","English","134",
+                "1500","102 Videos"));
+        teacher_models.add(new Teacher_Model("Daniel William","CBSE","Maths","Physics","English","134",
+                "1500","102 Videos"));
+        teacher_adapter = new Teacher_Adapter(getActivity(),teacher_models);
+        rv_teacher.setAdapter(teacher_adapter);
+
+
         return view;
     }
 }

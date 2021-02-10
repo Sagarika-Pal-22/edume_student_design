@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".InviteToShare_Activity_64_16"
+            android:label="@string/title_activity_invite_to_share__64_16"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".ChatActivity_64_15"
             android:label="@string/title_activity_chat_64_15"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ScreenSharing_Activity_64_14"
             android:label="@string/title_activity_screen_sharing__64_14"

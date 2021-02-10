@@ -245,4 +245,24 @@
             android:id="@+id/action_Second12Fragment_to_First12Fragment"
             app:destination="@id/First12Fragment" />
     </fragment>
+    <fragment
+        android:id="@+id/First13Fragment"
+        android:name="com.example.studentperspective.First13Fragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first13">
+
+        <action
+            android:id="@+id/action_First13Fragment_to_Second13Fragment"
+            app:destination="@id/Second13Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second13Fragment"
+        android:name="com.example.studentperspective.Second13Fragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second13">
+
+        <action
+            android:id="@+id/action_Second13Fragment_to_First13Fragment"
+            app:destination="@id/First13Fragment" />
+    </fragment>
 </navigation>

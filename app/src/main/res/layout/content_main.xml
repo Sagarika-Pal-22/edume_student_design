@@ -21,6 +21,7 @@
                 android:background="@drawable/gradient_bar"
                 app:itemIconTint="#fff"
                 app:itemTextColor="#fff"
+                app:itemRippleColor="#fff"
                 app:itemHorizontalTranslationEnabled="true"
                 app:labelVisibilityMode="labeled"
                 app:menu="@menu/bottom_nav_menu" />
