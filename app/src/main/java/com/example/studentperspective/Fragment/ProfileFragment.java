@@ -12,8 +12,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.studentperspective.Badge_Adapter;
-import com.example.studentperspective.Badge_Model;
+import com.example.studentperspective.Adapter.Badge_Adapter;
+import com.example.studentperspective.Model.Badge_Model;
 import com.example.studentperspective.R;
 
 import java.util.ArrayList;

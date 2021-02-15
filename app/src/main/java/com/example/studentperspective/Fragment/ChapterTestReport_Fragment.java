@@ -30,6 +30,7 @@ public class ChapterTestReport_Fragment extends Fragment {
             R.drawable.english,
             R.drawable.chem
     };
+    ViewPagerAdapter viewPagerAdapter;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -38,7 +39,14 @@ public class ChapterTestReport_Fragment extends Fragment {
         viewPager = view.findViewById(R.id.viewpager);
         tabLayout = view.findViewById(R.id.tabLayout);
 
-        setupViewPager(viewPager);
+        //setupViewPager(viewPager);
+        viewPagerAdapter = new ViewPagerAdapter(getChildFragmentManager(),0);
+        viewPagerAdapter.addFragment(new All_Fragment_52(), "All");
+        viewPagerAdapter.addFragment(new Maths_Fragment(), "Maths");
+        viewPagerAdapter.addFragment(new Physics_Fragment(), "Physics");
+        viewPagerAdapter.addFragment(new English_Fragment(), "English");
+        viewPagerAdapter.addFragment(new Chemistry_Fragment(), "Chemistry");
+        viewPager.setAdapter(viewPagerAdapter);
         tabLayout.setupWithViewPager(viewPager);
         setupTabIcons();
         return view;

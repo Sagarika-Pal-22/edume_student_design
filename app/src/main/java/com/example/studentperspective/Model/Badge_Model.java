@@ -1,4 +1,4 @@
-package com.example.studentperspective;
+package com.example.studentperspective.Model;
 
 public class Badge_Model {
 

@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:text="Anna Hamster"
                 android:textColor="@color/colorPurple"
-                android:fontFamily="@font/fonts_medium"
+                android:fontFamily="@font/bold"
                 android:layout_marginVertical="@dimen/_3sdp"
                 android:textSize="18sp"
                 android:textStyle="bold"/>

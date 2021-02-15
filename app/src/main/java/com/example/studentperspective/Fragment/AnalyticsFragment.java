@@ -51,4 +51,6 @@ public class AnalyticsFragment extends Fragment {
 
         return view;
     }
+
+
 }

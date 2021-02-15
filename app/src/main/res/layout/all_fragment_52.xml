@@ -77,7 +77,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="@dimen/_5sdp"
                         android:text="10/25"
-                        android:fontFamily="@font/fonts_medium"
+                        android:fontFamily="@font/fonts_bold"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         android:textColor="@color/colorPrimary"/>
@@ -102,7 +102,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="@dimen/_5sdp"
                         android:text="18/45"
-                        android:fontFamily="@font/fonts_medium"
+                        android:fontFamily="@font/fonts_bold"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         android:textColor="@color/colorPrimary"/>
@@ -127,7 +127,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginVertical="@dimen/_5sdp"
                         android:text="150+ Q/Hr"
-                        android:fontFamily="@font/fonts_medium"
+                        android:fontFamily="@font/fonts_bold"
                         android:textSize="14sp"
                         android:textStyle="bold"
                         android:textColor="@color/colorPrimary"/>

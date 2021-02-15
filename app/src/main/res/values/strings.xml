@@ -23,4 +23,7 @@
     <string name="title_activity_screen_sharing__64_14">ScreenSharing_Activity_64_14</string>
     <string name="title_activity_chat_64_15">ChatActivity_64_15</string>
     <string name="title_activity_invite_to_share__64_16">InviteToShare_Activity_64_16</string>
+    <string name="title_activity_screen_invitation__64_23">ScreenInvitation_Activity_64_23</string>
+    <string name="title_activity_bio_teacher__66">BioTeacher_Activity_66</string>
+    <string name="title_activity_exercise_library__67">ExerciseLibrary_Activity_67</string>
 </resources>
