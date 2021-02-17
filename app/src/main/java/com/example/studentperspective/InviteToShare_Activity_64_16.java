@@ -1,0 +1,171 @@
+package com.example.studentperspective;
+
+import android.content.Context;
+import android.content.res.Configuration;
+import android.os.Build;
+import android.os.Bundle;
+
+import com.example.studentperspective.Fragment.ChapterTestReport_Fragment;
+import com.example.studentperspective.Fragment.TeacherFragment_64_16;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.FragmentTransaction;
+
+import android.view.MenuItem;
+import android.view.View;
+import android.view.WindowManager;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+public class InviteToShare_Activity_64_16 extends AppCompatActivity {
+
+    private DrawerLayout drawerLayout;
+    private ActionBarDrawerToggle drawerToggle;
+    private NavigationView navigationView;
+    BottomNavigationView bottom_navigationView;
+    ImageView img_back;
+
+    TextView text_tchr,text_chat,text_screen;
+    View view_tchr,view_chat,view_screen;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_invite_to_share__64_16);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.nav_view);
+        bottom_navigationView = (BottomNavigationView) findViewById(R.id.bottom_nav);
+        bottom_navigationView = (BottomNavigationView) findViewById(R.id.bottom_nav);
+        img_back = findViewById(R.id.img_back);
+        drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.Open, R.string.Close);
+        drawerLayout.addDrawerListener(drawerToggle);
+        drawerToggle.syncState();
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setHomeAsUpIndicator(R.drawable.hamburger);
+        }
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+
+        text_tchr = findViewById(R.id.text_tchr);
+        text_chat = findViewById(R.id.text_chat);
+        text_screen = findViewById(R.id.text_screen);
+        view_tchr = findViewById(R.id.view_tchr);
+        view_chat = findViewById(R.id.view_chat);
+        view_screen = findViewById(R.id.view_screen);
+
+        text_screen.setTextColor(getResources().getColor(R.color.colorPrimary));
+        view_screen.setVisibility(View.VISIBLE);
+
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected( MenuItem menuItem) {
+
+                int id = menuItem.getItemId();
+                switch (id) {
+                    case R.id.nav_home:
+//                        startActivity(new Intent(MainActivity.this,AccountHolderDetails_Activity.class));
+                        break;
+                    case R.id.nav_profile:
+//                        startActivity(new Intent(MainActivity.this, MoneyTransferSetting_Activity.class));
+                        break;
+                    case R.id.nav_connect_desktop:
+//                        startActivity(new Intent(MainActivity.this,CashbackOffers_Activity.class));
+                        break;
+                    case R.id.nav_feedback:
+//                        startActivity(new Intent(MainActivity.this,Settings_Activity.class));
+                        break;
+                    case R.id.nav_my_account:
+//                        startActivity(new Intent(MainActivity.this, HelpSupport_Activity.class));
+                        break;
+                    case R.id.nav_connect_tv:
+//                        startActivity(new Intent(MainActivity.this, Feedback_Activity.class));
+                        break;
+                    case R.id.nav_settings:
+//                        startActivity(new Intent(MainActivity.this, Feedback_Activity.class));
+                        break;
+                    case R.id.nav_friend:
+//                        startActivity(new Intent(MainActivity.this, Feedback_Activity.class));
+                        break;
+                    case R.id.nav_about_us:
+//                        startActivity(new Intent(MainActivity.this, Feedback_Activity.class));
+                        break;
+                    case R.id.nav_help:
+//                        startActivity(new Intent(MainActivity.this, Feedback_Activity.class));
+                        break;
+                    case R.id.nav_contact:
+//                        startActivity(new Intent(MainActivity.this, Feedback_Activity.class));
+                        break;
+                    default:
+                        return true;
+                }
+                return true;
+            }
+        });
+
+        bottom_navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                int id = menuItem.getItemId();
+                if (id == R.id.nav_home) {
+//                    HomeFragment home_fragment = new HomeFragment();
+//                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+//                    fragmentTransaction.replace(R.id.framLayout, home_fragment);
+//                    fragmentTransaction.commit();
+                }else if (id == R.id.nav_analytics) {
+//                    ChapterTestReport_Fragment chapterTestReport_fragment = new ChapterTestReport_Fragment();
+//                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+//                    fragmentTransaction.replace(R.id.framLayout, chapterTestReport_fragment);
+//                    fragmentTransaction.commit();
+                }else if (id == R.id.nav_classroom) {
+//                    ClassroomFragment classroomFragment = new ClassroomFragment();
+//                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+//                    fragmentTransaction.replace(R.id.framLayout, classroomFragment);
+//                    fragmentTransaction.commit();
+                }else if (id == R.id.nav_profile) {
+//                    ProfileFragment profileFragment = new ProfileFragment();
+//                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+//                    fragmentTransaction.replace(R.id.framLayout, profileFragment);
+//                    fragmentTransaction.commit();
+                }else if (id == R.id.nav_teacher) {
+                    TeacherFragment_64_16 teacherFragment = new TeacherFragment_64_16();
+                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                    fragmentTransaction.replace(R.id.framLayout, teacherFragment);
+                    fragmentTransaction.commit();
+                }
+                return true;
+            }
+        });
+        bottom_navigationView.setSelectedItemId(R.id.nav_teacher);
+
+        img_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
+
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(newBase);
+        final Configuration override = new Configuration(newBase.getResources().getConfiguration());
+        override.fontScale = 1.0f;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            applyOverrideConfiguration(override);
+        }
+    }
+}
