@@ -26,4 +26,9 @@
     <string name="title_activity_screen_invitation__64_23">ScreenInvitation_Activity_64_23</string>
     <string name="title_activity_bio_teacher__66">BioTeacher_Activity_66</string>
     <string name="title_activity_exercise_library__67">ExerciseLibrary_Activity_67</string>
+    <string name="title_activity_exam_submit__70">ExamSubmit_Activity_70</string>
+    <string name="title_activity_test_report__71">TestReport_Activity_71</string>
+    <string name="title_activity_model_exam__75">ModelExam_Activity_75</string>
+    <string name="title_activity_settings__75_1">Settings_Activity_75_1</string>
+    <string name="title_activity_classroom__76_13">Classroom_Activity_76_13</string>
 </resources>
