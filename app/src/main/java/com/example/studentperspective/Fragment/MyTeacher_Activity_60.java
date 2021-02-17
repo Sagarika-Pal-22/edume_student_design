@@ -7,12 +7,9 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 
-import com.example.studentperspective.EdumeActivity_61;
 import com.example.studentperspective.MainActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -147,9 +144,9 @@ public class MyTeacher_Activity_60 extends AppCompatActivity {
                     fragmentTransaction.replace(R.id.framLayout, classroomFragment);
                     fragmentTransaction.commit();
                 }else if (id == R.id.nav_profile) {
-                    ProfileFragment profileFragment = new ProfileFragment();
+                    ProfileFragment_89_4 profileFragment894 = new ProfileFragment_89_4();
                     FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction.replace(R.id.framLayout, profileFragment);
+                    fragmentTransaction.replace(R.id.framLayout, profileFragment894);
                     fragmentTransaction.commit();
                 }else if (id == R.id.nav_teacher) {
                     MyTeacherFragment_60 myTeacherFragment_60 = new MyTeacherFragment_60();

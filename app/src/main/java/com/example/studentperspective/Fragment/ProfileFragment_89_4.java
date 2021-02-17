@@ -19,7 +19,7 @@ import com.example.studentperspective.R;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProfileFragment extends Fragment {
+public class ProfileFragment_89_4 extends Fragment {
 
     RecyclerView rc_badges;
     List<Badge_Model> badgeModels;
@@ -28,7 +28,7 @@ public class ProfileFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_profile,container,false);
+        View view = inflater.inflate(R.layout.fragment_profile_89_4,container,false);
 
         badgeModels = new ArrayList<>();
 

@@ -32,4 +32,13 @@
     <string name="title_activity_settings__75_1">Settings_Activity_75_1</string>
     <string name="title_activity_classroom__76_13">Classroom_Activity_76_13</string>
     <string name="title_activity_lesson_title__77">LessonTitle_Activity_77</string>
+    <string name="title_activity_exercise__78_1">Exercise_Activity_78_1</string>
+    <string name="title_activity_assignment__78_6">Assignment_Activity_78_6</string>
+    <string name="title_activity_class_timing__79">ClassTiming_Activity_79</string>
+    <string name="title_activity_physics__80">Physics_Activity_80</string>
+    <string name="title_activity_edume__81">Edume_Activity_81</string>
+    <string name="title_activity_chapter_library__83">ChapterLibrary_Activity_83</string>
+    <string name="title_activity_test_exam__87_1">TestExam_Activity_87_1</string>
+    <string name="title_activity_test_report__89">TestReport_Activity_89</string>
+    <string name="title_activity_exercise_report__89_1">ExerciseReport_Activity_89_1</string>
 </resources>

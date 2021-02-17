@@ -1,7 +1,6 @@
 package com.example.studentperspective;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -14,7 +13,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
@@ -29,7 +27,7 @@ import android.widget.Toast;
 import com.example.studentperspective.Fragment.AnalyticsFragment;
 import com.example.studentperspective.Fragment.ClassroomFragment;
 import com.example.studentperspective.Fragment.HomeFragment;
-import com.example.studentperspective.Fragment.ProfileFragment;
+import com.example.studentperspective.Fragment.ProfileFragment_89_4;
 import com.example.studentperspective.Fragment.TeacherFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
@@ -148,9 +146,9 @@ public class MainActivity extends AppCompatActivity {
                     fragmentTransaction.replace(R.id.framLayout, classroomFragment);
                     fragmentTransaction.commit();
                 }else if (id == R.id.nav_profile) {
-                    ProfileFragment profileFragment = new ProfileFragment();
+                    ProfileFragment_89_4 profileFragment894 = new ProfileFragment_89_4();
                     FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction.replace(R.id.framLayout, profileFragment);
+                    fragmentTransaction.replace(R.id.framLayout, profileFragment894);
                     fragmentTransaction.commit();
                 }else if (id == R.id.nav_teacher) {
                     TeacherFragment teacherFragment = new TeacherFragment();

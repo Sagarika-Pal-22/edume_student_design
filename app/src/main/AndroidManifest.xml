@@ -10,9 +10,45 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".ExerciseReport_Activity_89_1"
+            android:label="@string/title_activity_exercise_report__89_1"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".TestReport_Activity_89"
+            android:label="@string/title_activity_test_report__89"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TestExam_Activity_87_1"
+            android:label="@string/title_activity_test_exam__87_1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChapterLibrary_Activity_83"
+            android:label="@string/title_activity_chapter_library__83"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Edume_Activity_81"
+            android:label="@string/title_activity_edume__81"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Physics_Activity_80"
+            android:label="@string/title_activity_physics__80"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ClassTiming_Activity_79"
+            android:label="@string/title_activity_class_timing__79"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Assignment_Activity_78_6"
+            android:label="@string/title_activity_assignment__78_6"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Exercise_Activity_78_1"
+            android:label="@string/title_activity_exercise__78_1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".LessonTitle_Activity_77"
             android:label="@string/title_activity_lesson_title__77"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Classroom_Activity_76_13"
             android:label="@string/title_activity_classroom__76_13"

@@ -7,16 +7,9 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 
-import com.example.studentperspective.Fragment.AnalyticsFragment;
 import com.example.studentperspective.Fragment.ChapterTestReport_Fragment;
-import com.example.studentperspective.Fragment.ClassroomFragment;
-import com.example.studentperspective.Fragment.HomeFragment;
-import com.example.studentperspective.Fragment.ProfileFragment;
-import com.example.studentperspective.Fragment.TeacherFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
