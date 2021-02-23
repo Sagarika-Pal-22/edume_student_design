@@ -41,4 +41,5 @@
     <string name="title_activity_test_exam__87_1">TestExam_Activity_87_1</string>
     <string name="title_activity_test_report__89">TestReport_Activity_89</string>
     <string name="title_activity_exercise_report__89_1">ExerciseReport_Activity_89_1</string>
+    <string name="title_activity_notification_">Notification_Activity</string>
 </resources>
