@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Comment_Activity"
+            android:label="@string/title_activity_comment_"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
             android:name=".Notification_Activity"
             android:label="@string/title_activity_notification_"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ExerciseReport_Activity_89_1"
             android:label="@string/title_activity_exercise_report__89_1"
