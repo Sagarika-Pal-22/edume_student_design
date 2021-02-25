@@ -9,5 +9,6 @@
     <color name="colorPurple">#9900cc</color>
     <color name="colorBlue">#4e54e2</color>
     <color name="colorSky">#27cedf</color>
+    <color name="light_grey">#CFCECE</color>
 
 </resources>

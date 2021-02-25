@@ -227,7 +227,7 @@
                 android:textColor="#fff"
                 android:textAllCaps="false"
                 android:fontFamily="@font/fonts_medium"
-                android:background="@drawable/gradient_bar"/>
+                android:background="@drawable/btnbackground"/>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
 
