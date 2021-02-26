@@ -10,5 +10,10 @@
     <color name="colorBlue">#4e54e2</color>
     <color name="colorSky">#27cedf</color>
     <color name="light_grey">#CFCECE</color>
+    <color name="dark_grey">#959595</color>
+    <color name="sky">#30D5EA</color>
+    <color name="light_green">#DFEDE0</color>
+    <color name="deep_green">#439849</color>
+
 
 </resources>

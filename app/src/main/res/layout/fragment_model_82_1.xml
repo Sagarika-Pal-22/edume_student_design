@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/gradient_light">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/fonts_semibold"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#753abc"
+            android:lineSpacingExtra="4sp"
+            android:text="1st Term" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/gradient_bar"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fonts_semibold"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:lineSpacingExtra="4sp"
+            android:text="Grade V" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fonts_semibold"
+            android:textStyle="normal"
+            android:textSize="14sp"
+            android:textColor="#ffffff"
+            android:lineSpacingExtra="4sp"
+            android:text="English" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/fonts_semibold"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:textStyle="normal"
+        android:textSize="14sp"
+        android:textColor="#3e3e3e"
+        android:lineSpacingExtra="6sp"
+        android:text="General Instructions"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_instruction"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginVertical="@dimen/_10sdp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            app:cardCornerRadius="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_10sdp">
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Next"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:fontFamily="@font/fonts_medium"
+                android:background="@drawable/btnbackground"/>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>
