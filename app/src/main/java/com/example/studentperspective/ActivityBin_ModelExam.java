@@ -6,8 +6,8 @@ import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
 
-import com.example.studentperspective.Fragment.ClassTiming_Fragment_79;
-import com.example.studentperspective.Fragment.ModelExam_Fragment_82;
+import com.example.studentperspective.Fragment.Bin_ModelExam_Fragment_84;
+import com.example.studentperspective.Fragment.ChapterLibrary_Fragment_83;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
@@ -28,7 +28,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class ModelExam_Activity_82 extends AppCompatActivity {
+public class ActivityBin_ModelExam extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
@@ -38,7 +38,7 @@ public class ModelExam_Activity_82 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_model_exam__82);
+        setContentView(R.layout.activity_bin__model_exam);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -121,9 +121,9 @@ public class ModelExam_Activity_82 extends AppCompatActivity {
 //                    fragmentTransaction.replace(R.id.framLayout, chapterTestReport_fragment);
 //                    fragmentTransaction.commit();
                 }else if (id == R.id.nav_classroom) {
-                    ModelExam_Fragment_82 modelExam_fragment = new ModelExam_Fragment_82();
+                    Bin_ModelExam_Fragment_84 classroomFragment = new Bin_ModelExam_Fragment_84();
                     FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction.replace(R.id.framLayout, modelExam_fragment);
+                    fragmentTransaction.replace(R.id.framLayout, classroomFragment);
                     fragmentTransaction.commit();
                 }else if (id == R.id.nav_profile) {
 //                    ProfileFragment profileFragment = new ProfileFragment();
@@ -147,6 +147,7 @@ public class ModelExam_Activity_82 extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
     }
 
     @Override
@@ -174,7 +175,7 @@ public class ModelExam_Activity_82 extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == android.R.id.home) {
-            Intent intent = new Intent(ModelExam_Activity_82.this, MainActivity.class);
+            Intent intent = new Intent(ActivityBin_ModelExam.this, MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
             finish();

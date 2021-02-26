@@ -44,4 +44,6 @@
     <string name="title_activity_notification_">Notification_Activity</string>
     <string name="title_activity_comment_">Comment_Activity</string>
     <string name="title_activity_model_exam__82">ModelExam_Activity_82</string>
+    <string name="title_activity__bin">Activity_Bin</string>
+    <string name="title_activity_bin__model_exam">ActivityBin_ModelExam</string>
 </resources>

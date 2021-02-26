@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ModelExam_Activity_82"
-            android:label="@string/title_activity_model_exam__82"
+            android:name=".ActivityBin_ModelExam"
+            android:label="@string/title_activity_bin__model_exam"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".Activity_Bin"
+            android:label="@string/title_activity__bin"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Comment_Activity"
             android:label="@string/title_activity_comment_"

@@ -1,5 +1,18 @@
 package com.example.studentperspective;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.res.Configuration;
+import android.os.Build;
+import android.os.Bundle;
+
+import com.example.studentperspective.Fragment.Assignment_Fragment_78_6;
+import com.example.studentperspective.Fragment.Fragment_ActivityBin;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,66 +21,33 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.annotation.TargetApi;
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.content.res.Configuration;
-import android.graphics.drawable.Drawable;
-import android.os.Build;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.studentperspective.Fragment.AnalyticsFragment;
-import com.example.studentperspective.Fragment.ClassroomFragment;
-import com.example.studentperspective.Fragment.Fragment_ActivityBin;
-import com.example.studentperspective.Fragment.HomeFragment;
-import com.example.studentperspective.Fragment.ModelExam_Fragment_82;
-import com.example.studentperspective.Fragment.ModelExam_Fragment_82_1;
-import com.example.studentperspective.Fragment.ModelExam_Fragment_82_2;
-import com.example.studentperspective.Fragment.ModelExam_Fragment_82_3;
-import com.example.studentperspective.Fragment.ProfileFragment_89_4;
-import com.example.studentperspective.Fragment.TeacherFragment;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationView;
-
-public class MainActivity extends AppCompatActivity {
+public class Activity_Bin extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
     private NavigationView navigationView;
-
     BottomNavigationView bottom_navigationView;
     ImageView img_back;
-
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    public static void setStatusBarGradiant(Activity activity) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Window window = activity.getWindow();
-            Drawable background = activity.getResources().getDrawable(R.drawable.status);
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.setStatusBarColor(activity.getResources().getColor(android.R.color.transparent));
-            window.setNavigationBarColor(activity.getResources().getColor(android.R.color.transparent));
-            window.setBackgroundDrawable(background);
-        }
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-//        setStatusBarGradiant(this);
+        setContentView(R.layout.activity__bin);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.nav_view);
+        bottom_navigationView = (BottomNavigationView) findViewById(R.id.bottom_nav);
+        img_back = findViewById(R.id.img_back);
         drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.Open, R.string.Close);
         drawerLayout.addDrawerListener(drawerToggle);
         drawerToggle.syncState();
@@ -78,10 +58,6 @@ public class MainActivity extends AppCompatActivity {
             getSupportActionBar().setHomeAsUpIndicator(R.drawable.hamburger);
         }
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-//        getSupportActionBar().setTitle("Report");
-
-        navigationView = findViewById(R.id.nav_view);
-        img_back = findViewById(R.id.img_back);
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -129,42 +105,41 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        bottom_navigationView = (BottomNavigationView) findViewById(R.id.bottom_nav);
 
         bottom_navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 int id = menuItem.getItemId();
                 if (id == R.id.nav_home) {
+//                    HomeFragment home_fragment = new HomeFragment();
+//                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+//                    fragmentTransaction.replace(R.id.framLayout, home_fragment);
+//                    fragmentTransaction.commit();
+                }else if (id == R.id.nav_analytics) {
+//                    ChapterTestReport_Fragment chapterTestReport_fragment = new ChapterTestReport_Fragment();
+//                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+//                    fragmentTransaction.replace(R.id.framLayout, chapterTestReport_fragment);
+//                    fragmentTransaction.commit();
+                }else if (id == R.id.nav_classroom) {
                     Fragment_ActivityBin fragment_activityBin = new Fragment_ActivityBin();
                     FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
                     fragmentTransaction.replace(R.id.framLayout, fragment_activityBin);
                     fragmentTransaction.commit();
-                }else if (id == R.id.nav_analytics) {
-                    AnalyticsFragment analyticsFragment = new AnalyticsFragment();
-                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction.replace(R.id.framLayout, analyticsFragment);
-                    fragmentTransaction.commit();
-                }else if (id == R.id.nav_classroom) {
-                    ClassroomFragment classroomFragment = new ClassroomFragment();
-                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction.replace(R.id.framLayout, classroomFragment);
-                    fragmentTransaction.commit();
                 }else if (id == R.id.nav_profile) {
-                    ProfileFragment_89_4 profileFragment894 = new ProfileFragment_89_4();
-                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction.replace(R.id.framLayout, profileFragment894);
-                    fragmentTransaction.commit();
+//                    ProfileFragment profileFragment = new ProfileFragment();
+//                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+//                    fragmentTransaction.replace(R.id.framLayout, profileFragment);
+//                    fragmentTransaction.commit();
                 }else if (id == R.id.nav_teacher) {
-                    TeacherFragment teacherFragment = new TeacherFragment();
-                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction.replace(R.id.framLayout, teacherFragment);
-                    fragmentTransaction.commit();
+//                    TeacherFragment teacherFragment = new TeacherFragment();
+//                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+//                    fragmentTransaction.replace(R.id.framLayout, teacherFragment);
+//                    fragmentTransaction.commit();
                 }
                 return true;
             }
         });
-        bottom_navigationView.setSelectedItemId(R.id.nav_home);
+        bottom_navigationView.setSelectedItemId(R.id.nav_classroom);
 
         img_back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -174,7 +149,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_toolbar, menu);
@@ -200,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == android.R.id.home) {
-            Intent intent = new Intent(MainActivity.this, MainActivity.class);
+            Intent intent = new Intent(Activity_Bin.this, MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
             finish();
@@ -226,5 +200,4 @@ public class MainActivity extends AppCompatActivity {
             applyOverrideConfiguration(override);
         }
     }
-
 }
