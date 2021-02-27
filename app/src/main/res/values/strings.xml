@@ -46,4 +46,6 @@
     <string name="title_activity_model_exam__82">ModelExam_Activity_82</string>
     <string name="title_activity__bin">Activity_Bin</string>
     <string name="title_activity_bin__model_exam">ActivityBin_ModelExam</string>
+    <string name="title_activity_favourite_chapter__92">FavouriteChapter_Activity_92</string>
+    <string name="title_activity_favourite_chapter__93">FavouriteChapter_Activity_93</string>
 </resources>

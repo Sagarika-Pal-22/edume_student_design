@@ -26,6 +26,7 @@ import android.widget.Toast;
 
 import com.example.studentperspective.Fragment.AnalyticsFragment;
 import com.example.studentperspective.Fragment.ClassroomFragment;
+import com.example.studentperspective.Fragment.FavouriteChapter_Fragment_91;
 import com.example.studentperspective.Fragment.Fragment_ActivityBin;
 import com.example.studentperspective.Fragment.HomeFragment;
 import com.example.studentperspective.Fragment.ModelExam_Fragment_82;
@@ -136,9 +137,9 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 int id = menuItem.getItemId();
                 if (id == R.id.nav_home) {
-                    Fragment_ActivityBin fragment_activityBin = new Fragment_ActivityBin();
+                    FavouriteChapter_Fragment_91 favouriteChapter_fragment = new FavouriteChapter_Fragment_91();
                     FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction.replace(R.id.framLayout, fragment_activityBin);
+                    fragmentTransaction.replace(R.id.framLayout, favouriteChapter_fragment);
                     fragmentTransaction.commit();
                 }else if (id == R.id.nav_analytics) {
                     AnalyticsFragment analyticsFragment = new AnalyticsFragment();

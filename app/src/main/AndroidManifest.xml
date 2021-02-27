@@ -10,9 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".FavouriteChapter_Activity_93"
+            android:label="@string/title_activity_favourite_chapter__93"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".FavouriteChapter_Activity_91"
+            android:label="@string/title_activity_favourite_chapter__92"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".ActivityBin_ModelExam"
             android:label="@string/title_activity_bin__model_exam"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Activity_Bin"
             android:label="@string/title_activity__bin"

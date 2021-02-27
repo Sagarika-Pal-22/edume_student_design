@@ -6,8 +6,8 @@ import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
 
-import com.example.studentperspective.Fragment.ChapterTestReport_Fragment;
-import com.example.studentperspective.Fragment.LessonTitle_Fragment_77;
+import com.example.studentperspective.Fragment.FavouriteChapter_Fragment_91;
+import com.example.studentperspective.Fragment.FavouriteChapter_Fragment_93;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
@@ -28,7 +28,7 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class LessonTitle_Activity_77 extends AppCompatActivity {
+public class FavouriteChapter_Activity_93 extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     private ActionBarDrawerToggle drawerToggle;
@@ -38,7 +38,7 @@ public class LessonTitle_Activity_77 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lesson_title__77);
+        setContentView(R.layout.activity_favourite_chapter__93);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -121,9 +121,9 @@ public class LessonTitle_Activity_77 extends AppCompatActivity {
 //                    fragmentTransaction.replace(R.id.framLayout, chapterTestReport_fragment);
 //                    fragmentTransaction.commit();
                 }else if (id == R.id.nav_classroom) {
-                    LessonTitle_Fragment_77 lessonTitle_fragment_77 = new LessonTitle_Fragment_77();
+                    FavouriteChapter_Fragment_93 favouriteChapter_fragment = new FavouriteChapter_Fragment_93();
                     FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction.replace(R.id.framLayout, lessonTitle_fragment_77);
+                    fragmentTransaction.replace(R.id.framLayout, favouriteChapter_fragment);
                     fragmentTransaction.commit();
                 }else if (id == R.id.nav_profile) {
 //                    ProfileFragment profileFragment = new ProfileFragment();
@@ -147,6 +147,7 @@ public class LessonTitle_Activity_77 extends AppCompatActivity {
                 onBackPressed();
             }
         });
+
     }
 
     @Override
@@ -174,7 +175,7 @@ public class LessonTitle_Activity_77 extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == android.R.id.home) {
-            Intent intent = new Intent(LessonTitle_Activity_77.this, MainActivity.class);
+            Intent intent = new Intent(FavouriteChapter_Activity_93.this, MainActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(intent);
             finish();
@@ -200,5 +201,4 @@ public class LessonTitle_Activity_77 extends AppCompatActivity {
             applyOverrideConfiguration(override);
         }
     }
-
 }
