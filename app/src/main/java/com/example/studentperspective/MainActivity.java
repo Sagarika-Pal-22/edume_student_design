@@ -34,6 +34,7 @@ import com.example.studentperspective.Fragment.ModelExam_Fragment_82_1;
 import com.example.studentperspective.Fragment.ModelExam_Fragment_82_2;
 import com.example.studentperspective.Fragment.ModelExam_Fragment_82_3;
 import com.example.studentperspective.Fragment.ProfileFragment_89_4;
+import com.example.studentperspective.Fragment.ScreenInvitation_Fragment_64_23;
 import com.example.studentperspective.Fragment.TeacherFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
@@ -137,9 +138,9 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 int id = menuItem.getItemId();
                 if (id == R.id.nav_home) {
-                    FavouriteChapter_Fragment_91 favouriteChapter_fragment = new FavouriteChapter_Fragment_91();
+                    ScreenInvitation_Fragment_64_23 screenInvitation_fragment = new ScreenInvitation_Fragment_64_23();
                     FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                    fragmentTransaction.replace(R.id.framLayout, favouriteChapter_fragment);
+                    fragmentTransaction.replace(R.id.framLayout, screenInvitation_fragment);
                     fragmentTransaction.commit();
                 }else if (id == R.id.nav_analytics) {
                     AnalyticsFragment analyticsFragment = new AnalyticsFragment();
